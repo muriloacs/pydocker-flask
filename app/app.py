@@ -11,7 +11,7 @@ r.set('place', 'pyWorld')
 
 @app.route('/')
 def hello_word():
-    return 'Hello {0}!!\n'.format(r.get('place'))
+    return 'Hello {0}!!\n'.format(r.get('place').decode("utf-8"))
 
 
 if __name__ == '__main__':

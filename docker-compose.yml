@@ -6,6 +6,8 @@ app:
     ENV: DEV
   volumes:
     - ./app:/usr/src/app
+  links:
+    - redis
 
 redis:
   image: redis
